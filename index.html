@@ -14,7 +14,52 @@
             height: 400px; /* give header some height to display the background image */
             /* background-position: 0 -200px;  added on background selector */
             /*background-repeat:no-repeat;  added on background selector*/
+            padding-top: 100px;
+            padding-left: 100px;
+            font-weight:bold;
+            font-family:Arial, Helvetica, sans-serif;
          }
+         nav{
+             background-color: rgb(255, 245, 238);
+             height: 50px;
+             text-align: center ;
+             padding-top: 2px;
+         }
+         li {
+             list-style-type: none;
+             display:inline;
+             padding: 0 20px;
+         }
+         li a {
+             text-decoration: none; 
+         }
+         /* Pseudo Class - to style text links */
+         li a:link { /* before click */
+                color: #000;
+         }
+         li a:visited { /* after click */
+                color:#818db3;
+         }
+         li a:hover { /* mouse over */
+                color:#333;
+         }
+         li a:active { /* mouse down */
+                color:#753a30;
+         }
+         main {
+             height: 400px;
+        }
+        main h1 {
+            color: rgb(129,141,179);
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        footer {
+            height: 40px;
+            background-color: rgb (129,141,179);
+            text-align: center;
+            padding-top: 20px;
+            color: rgb (211,218,240);
+        }
     </style>
     <!--Embed Style Method-->
     <style>
@@ -25,7 +70,7 @@
     <!--Container to wrap everything-->
 <div id="container">
    <!-- Brand of Website-->
-    <header>My Web Site Brand</header>
+    <header style="font-size: 60px; color: #fff">My Web Site Brand</header>
     <!--Main Navigation-->
     <nav>
         <ul>
@@ -41,7 +86,7 @@
     <main>
         <h1>My First Heading</h1>
         <p>My First Paragraph </p>
-        <!-- <img src="images/central_park.jpg" alt="Central Park Photo" width="500">-->
+        <!--<img src="images/central_park.jpg" alt="Central Park Photo" width="500">-->
     </main>
     <!--End Main Content-->
 
