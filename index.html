@@ -5,66 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
-    <!--Embed or Internal CSS-->
-    <style>
-        /* Style the header elemment */
-        header {
-            background: url(images/central_park.jpg) 0 -200px no-repeat; /* place image as background */
-            background-size: 1500px;
-            height: 400px; /* give header some height to display the background image */
-            /* background-position: 0 -200px;  added on background selector */
-            /*background-repeat:no-repeat;  added on background selector*/
-            padding-top: 100px;
-            padding-left: 100px;
-            font-weight:bold;
-            font-family:Arial, Helvetica, sans-serif;
-         }
-         nav{
-             background-color: rgb(255, 245, 238);
-             height: 50px;
-             text-align: center ;
-             padding-top: 2px;
-         }
-         li {
-             list-style-type: none;
-             display:inline;
-             padding: 0 20px;
-         }
-         li a {
-             text-decoration: none; 
-         }
-         /* Pseudo Class - to style text links */
-         li a:link { /* before click */
-                color: #000;
-         }
-         li a:visited { /* after click */
-                color:#818db3;
-         }
-         li a:hover { /* mouse over */
-                color:#333;
-         }
-         li a:active { /* mouse down */
-                color:#753a30;
-         }
-         main {
-             height: 400px;
-        }
-        main h1 {
-            color: rgb(129,141,179);
-            font-family:Arial, Helvetica, sans-serif;
-        }
-        footer {
-            height: 40px;
-            background-color: rgb(129,141,179);
-            text-align: center;
-            padding-top: 20px;
-            color: rgb(211,218,240);
-        }
-    </style>
-    <!--Embed Style Method-->
-    <style>
-        
-    </style>
+    <!--link External Stylesheet-->
+    <link rel="stylesheet" href="style.css"
 </head>
 <body>
     <!--Container to wrap everything-->
