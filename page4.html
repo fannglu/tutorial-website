@@ -31,12 +31,12 @@
         <!-- <img src="images/central_park.jpg" alt="Central Park Photo" width="500"> -->
 
         <ul id="album">
-            <li id="photo"><img src="images/winterland1.jpg" alt="Winter Land Photo 1" width="640"></li>
+            <!-- <li id="photo"><img src="images/winterland1.jpg" alt="Winter Land Photo 1" width="640"></li>
             <li id="photo"><img src="images/winterland2.jpg" alt="Winter Land Photo 2" width="640"></li>
             <li id="photo"><img src="images/winterland3.jpg" alt="Winter Land Photo 3" width="640"></li>
             <li id="photo"><img src="images/winterland4.jpg" alt="Winter Land Photo 4" width="640"></li>
             <li id="photo"><img src="images/winterland5.jpg" alt="Winter Land Photo 5" width="640"></li>
-            <li id="photo"><img src="images/winterland6.jpg" alt="Winter Land Photo 6" width="640"></li>
+            <li id="photo"><img src="images/winterland6.jpg" alt="Winter Land Photo 6" width="640"></li> -->
         </ul>
 
     </main>
@@ -47,7 +47,26 @@
 
 </div>
 <!-- End Container -->
+<script>
+    var photos = []; //Declare an empty array to store img element
+    var fileNames = []; //empty array to store image file names 
+    var imageList = [];  // empty array to store html list that contains an image element
+    var image; //Declare an empty variable to store the assembled image list codes
+    var openList = "<li id='photo'>"; // a variable that contain open list
+    var closeList = "</li>"; //a variable that contains close list element 
 
+    //Create a loop to create 6 images starting with index of 0
+    for (var i=0; i<6; i++) {
+        fileNames.push("Winterland"+(i+1)); //generate filename and store in the array
+        photos.push("<img src='images/" +fileNames[i]+".jpg' alt='Winter Land Photo" + (i+1) +"' width='640'>"); //assenble full image element 
+        image = openList + photos[i] + closeList; //assemble the entire image list and store in variable
+        imageList.push(image);// store full image list in array
+    }
+
+    //Display all six images from the array in the album
+    document.getElementById('album').innerHTML = imageList.join();
+
+</script>
 
 </body>
 
